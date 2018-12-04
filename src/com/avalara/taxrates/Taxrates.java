@@ -44,7 +44,6 @@ public class Taxrates {
 		for(int i=1; i<=total_states;i++)
 		{	 
 			//Get the states from 1st row each row
-			
 			driver.findElement(By.xpath("//div[@class='container pdn-t30 pdn-b30']/div//div[@class='col-control']/div/div[1]//p["+i+"]/a")).click();
 			
 			LinkedHashMap<String,String> rateTable = new LinkedHashMap<String,String>();
@@ -84,6 +83,7 @@ public class Taxrates {
 			}
 			catch(NoSuchElementException na)
 			{
+				System.out.println("");
 				continue;
 			}
 			 
